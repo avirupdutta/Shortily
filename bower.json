@@ -1,0 +1,19 @@
+{
+	"name": "img2pdf",
+	"description": "",
+	"main": "index.js",
+	"authors": ["avirupdutta <finalguider99@gmail.com>"],
+	"license": "ISC",
+	"homepage": "http://localhost:3000/",
+	"ignore": [
+		"**/.*",
+		"node_modules",
+		"bower_components",
+		"public/bower_components",
+		"test",
+		"tests"
+	],
+	"dependencies": {
+		"bootstrap": "^4.5.2"
+	}
+}

@@ -1,0 +1,15 @@
+@import url("/bower_components/bootstrap/dist/css/bootstrap.min.css");
+
+.bg-theme {
+    background-color: #1c66ff;
+}
+body {
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(0deg, rgba(255, 255, 255, 0.9220063025210083) 0%, rgba(28, 102, 255, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.9220063025210083) 0%, rgba(28, 102, 255, 1) 100%);
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.9220063025210083) 0%, rgba(28, 102, 255, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#1c66ff",GradientType=1);
+
+    background-repeat: no-repeat;
+    height: calc(100vh - 0.75rem);
+}
