@@ -7,7 +7,8 @@
         "node": "12.x"
     },
     "scripts": {
-        "start": "ts-node src/app.ts",
+        "start": "node src/app.js",
+        "build": "tsc src/app.ts",
         "dev": "nodemon --exec ts-node src/app.ts"
     },
     "keywords": [],
