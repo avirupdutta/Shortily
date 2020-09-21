@@ -14,7 +14,7 @@ router.post('/new',async <T>(req: Request, res: Response):Promise<void> => {
         });
         try {
             await urlDoc.save();
-            res.json({status: 200, url: `http://localhost:3000/${urlDoc.uid}`})
+            res.json({status: 200, url: `${process.env.HOST_URL}/${urlDoc.uid}`})
         } catch (error) {
             console.log(error)
             res.json({status: 500})
