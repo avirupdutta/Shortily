@@ -1,5 +1,6 @@
-import express, { Router, Request, Response } from "express";
-import shortid from "shortid";
+const express = require('express');
+import { Router, Request, Response } from "express";
+const shortid = require("shortid");
 import CustomUrl from "../db/models/CustomUrl";
 
 const router: Router = express.Router();

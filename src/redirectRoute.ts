@@ -1,4 +1,5 @@
-import express, { Router, Request, Response } from "express";
+const express = require("express");
+import { Router, Request, Response } from "express";
 import CustomUrl from "../db/models/CustomUrl";
 
 const router: Router = express.Router();

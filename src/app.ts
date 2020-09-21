@@ -1,7 +1,8 @@
 require("dotenv").config();
-import express, { Express, Request, Response } from "express";
-import expressLayouts from "express-ejs-layouts";
-import mongoose from "mongoose";
+const express = require("express");
+import { Express, Request, Response } from "express";
+const expressLayouts = require("express-ejs-layouts");
+const mongoose = require("mongoose");
 import db from "../db/dbConfig";
 import IndexRouter from "../api/index";
 import RedirectRouter from "./redirectRoute";
@@ -10,7 +11,7 @@ import RedirectRouter from "./redirectRoute";
 mongoose
     .connect(db, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log("MongoDB connected..."))
-    .catch(err => console.log(err));
+    .catch((err: string) => console.log(err));
 
 const PORT: string | number = process.env.PORT || 3000;
 const app: Express = express();

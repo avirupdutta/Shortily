@@ -1,4 +1,5 @@
-import mongoose, { Document, Model, Schema } from "mongoose";
+const mongoose = require("mongoose");
+import { Document, Model, Schema } from "mongoose";
 
 const customUrlSchema: Schema = new mongoose.Schema({
     mainUrl: {
