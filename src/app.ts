@@ -1,13 +1,12 @@
 require("dotenv").config();
 import { Express, Request, Response } from "express";
-import db from "../db/dbConfig";
-import IndexRouter from "../api/index";
+import db from "./db/dbConfig";
+import IndexRouter from "./api/index";
 import RedirectRouter from "./redirectRoute";
-
-const express = require("express");
-const cors = require("cors");
-const expressLayouts = require("express-ejs-layouts");
-const mongoose = require("mongoose");
+import mongoose from "mongoose";
+import express from "express";
+import cors from "cors";
+import expressLayouts from "express-ejs-layouts";
 
 // Connect to db
 mongoose

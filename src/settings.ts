@@ -1,5 +1,5 @@
 const settings = {
-    ENV: {
+    ENV_TYPES: {
         dev: "dev",
         prod: "production",
     },
