@@ -3,6 +3,9 @@
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
+    "engines": {
+        "node": "12.x"
+    },
     "scripts": {
         "start": "ts-node src/app.ts",
         "dev": "nodemon --exec ts-node src/app.ts",
