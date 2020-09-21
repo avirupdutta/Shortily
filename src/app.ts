@@ -1,11 +1,13 @@
 require("dotenv").config();
-const express = require("express");
 import { Express, Request, Response } from "express";
-const expressLayouts = require("express-ejs-layouts");
-const mongoose = require("mongoose");
 import db from "../db/dbConfig";
 import IndexRouter from "../api/index";
 import RedirectRouter from "./redirectRoute";
+
+const express = require("express");
+const cors = require("cors");
+const expressLayouts = require("express-ejs-layouts");
+const mongoose = require("mongoose");
 
 // Connect to db
 mongoose
@@ -16,7 +18,11 @@ mongoose
 const PORT: string | number = process.env.PORT || 3000;
 const app: Express = express();
 
+// setting up the view engine
 app.set("view engine", "ejs");
+
+// setting up the middlewares
+app.use(cors());
 app.use(expressLayouts);
 app.use(express.static("public"));
 app.use(express.json());

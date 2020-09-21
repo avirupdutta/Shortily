@@ -20,7 +20,6 @@ var apiUrl = protocol + "//" + site + "/api/new";
 
 document.querySelector("#shortBtn").addEventListener("click", function(e) {
     var longUrl = document.querySelector("#longUrl").value;
-    console.log(longUrl);
     if (longUrl.length > 0) {
         axios
             .post(apiUrl, {
